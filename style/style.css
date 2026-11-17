@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+/* Variables bootstrap */
+
+
+
+$theme-colors: (
+
+  
+
+"primary": #ba0202,
+"secondary": #050505,
+);
+
+
+
+
+
+/* V.B FIN */
+
+.titulo {
+
+    border:1px solid black;
+    
+}
+
+h1,h2,h3 {
+   font-family: "Libre Baskerville", serif !important;
+
+}
