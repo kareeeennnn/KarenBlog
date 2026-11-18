@@ -1,31 +1,67 @@
+
+
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&display=swap');
 
 
-/* Variables bootstrap */
 
-
-
-$theme-colors: (
-
-  
-
-"primary": #ba0202,
-"secondary": #050505,
-);
-
-
-
-
-
-/* V.B FIN */
+body {
+background-color:rgb(175, 167, 167);
+  font-family: "Libre Baskerville", serif;  
+  background-image: url("https://i.pinimg.com/1200x/47/d5/22/47d522f4340e9f057dc53075ab1151d9.jpg");
+  background-size:cover;
+  font-size:20px;
+}
 
 .titulo {
 
-    border:1px solid black;
-    
+border:1px solid black;
+
 }
 
-h1,h2,h3 {
-   font-family: "Libre Baskerville", serif !important;
+.cont {
 
+  width:100%;
+}
+
+ul {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+li {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+li:before {
+  content: ">";
+  padding-right: 5px;
+}
+
+li {
+  margin: 20px 0;
+}
+
+.nav li {
+  transition:all 1s;
+}
+
+.nav li::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  margin-top:5px;
+  background:var(--bs-primary);
+  transition: width .3s ease-out;
+}
+
+.nav li:hover::after {
+    width: 100%;
+}
+
+.nav li:hover {
+  font-size:23px;
+  color:var(--bs-primary);
 }
